@@ -1,24 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-    </div>
-    <span class="test">{{test}}test</span>
 
     <router-view/>
   </div>
 </template>
 <script>
-  export default {
-    mounted() {
-      this.$store.commit('setTest', 12)
-      this.$store.dispatch('setTest', 9)
-    },
-    computed: {
-      test() {
-        return this.$store.state.test
-      }
-    }
-  }
+  // import { mapGetters } from 'vuex'
+  // export default {
+  //   mounted() {
+  //     this.$store.commit('setTest', 12)
+  //     this.$store.dispatch('setTest', 23)
+  //   },
+  //   computed: {
+  //     ...mapGetters(['test']),
+  //     testNum() {
+  //       return this.test
+  //     }
+  //   }
+  // }
+  export default {}
   document.addEventListener('DOMContentLoaded', () => {
     const html = document.querySelector('html')
     let fontSize = window.innerWidth / 10
@@ -27,8 +27,12 @@
   })
 </script>
 <style lang="scss" scoped>
-  @import "./assets/styles/global";
   .test {
     font-size: px2rem(37.5);
+  }
+  #app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 </style>
