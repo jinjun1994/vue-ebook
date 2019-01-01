@@ -8,6 +8,8 @@ import './assets/fonts/daysOne.css'
 import './assets/fonts/cabin.css'
 import './assets/fonts/montserrat.css'
 import './assets/fonts/tangerine.css'
+import './assets/styles/global.scss'
+
 Vue.config.productionTip = false
 
 new Vue({
